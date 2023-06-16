@@ -1,0 +1,19 @@
+\chapter{Introducción}
+La práctica consiste en elaborar un programa para procesar una gramática no ambigua. En esta gramática, se definen dos reglas de producción:\newline
+\begin{enumerate}
+    \item B -> (RB | ε: Esta regla indica que el símbolo no terminal B puede ser reemplazado por la secuencia $'$(RB$'$ o puede ser eliminado, es decir, puede ser el símbolo vacío.\newline
+    \item R -> ) | (RR: Esta regla indica que el símbolo no terminal R puede ser reemplazado por el símbolo $'$)$'$ o puede ser seguido por la secuencia $'$(RR$'$.\newline
+\end{enumerate}
+
+El objetivo del programa es tomar una cadena de entrada conformada por paréntesis balanceados y aplicar una derivación única y a la izquierda para obtener una cadena generada. El proceso de derivación se realiza escaneando la cadena de izquierda a derecha y aplicando las reglas de producción correspondientes.\newline
+
+El programa debe contar con las siguientes características adicionales:\newline
+\begin{enumerate}
+    \item La cadena de entrada puede ser ingresada por el usuario o generada automáticamente.\newline
+    \item La evaluación de la gramática debe ser impresa en pantalla y/o guardada en un archivo. Se debe indicar el símbolo que se está evaluando, la producción aplicada y la cadena generada en cada paso.\newline
+    \item El programa debe ser capaz de manejar cadenas de hasta 1,000 caracteres de longitud.\newline
+\end{enumerate}
+
+Es importante seguir las condiciones de evaluación establecidas por el docente, como subir un informe en formato PDF al aula virtual, adjuntando el código fuente en LaTeX.\newline
+
+Esta práctica se basa en conceptos de teoría de la computación, específicamente en el estudio de gramáticas formales y sus derivaciones. El propósito es aplicar estos conceptos para implementar un programa que pueda procesar y generar cadenas válidas según una gramática específica.\newline
